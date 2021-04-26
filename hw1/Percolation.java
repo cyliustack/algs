@@ -32,6 +32,6 @@ public class Percolation {
 
     // test client (optional)
     public static void main(String[] args) {
-
-	}
+        System.out.println("Percolation begins.");
+    }
 }
