@@ -3,9 +3,18 @@ import edu.princeton.cs.algs4.StdStats;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
-
+    int[][] grid;
     // creates n-by-n grid, with all sites initially blocked
-    public Percolation(int n) {}
+    public Percolation(int n) {
+        grid = new int[n][n];
+        for (int i = 0; i < n; i++ ) {
+            for (int j = 0; j < n; j++ ) {
+                grid[i][j] = 0;
+                System.out.format("%d ", grid[i][j]);
+            }
+            System.out.format("\n");
+        }
+    }
 
     // opens the site (row, col) if it is not open already
     public void open(int row, int col) {}
@@ -32,6 +41,7 @@ public class Percolation {
 
     // test client (optional)
     public static void main(String[] args) {
+        Percolation p1 = new Percolation(10);
         System.out.println("Percolation begins.");
     }
 }
